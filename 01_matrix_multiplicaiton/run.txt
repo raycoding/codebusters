@@ -1,0 +1,38 @@
+Sample Runs:
+
+
+$> javac MatrixMultiplier.java
+$> java -Xmx128M -Xms16M MatrixMultiplier
+Enter Rows & Columns of Matrix 1:                                   
+2 4                                                                 
+Enter values for Matrix 1:                                          
+1 2 3 4                                                             
+5 6 7 8                                                             
+Enter Rows & Columns of Matrix 2:                                   
+4 3                                                                 
+Enter values for Matrix 2:                                          
+1 2 3                                                               
+4 5 6                                                               
+7 8 9                                                               
+10 11 12                                                            
+Computing Multiplication of Matrix 1 X Matrix 2 ...                 
+Result:                                                             
+70.0 80.0 90.0                                                      
+158.0 184.0 210.0
+
+
+$> java -Xmx128M -Xms16M MatrixMultiplier
+Enter Rows & Columns of Matrix 1:                                   
+1 2                                                                 
+Enter values for Matrix 1:                                          
+1 2                                                                 
+Enter Rows & Columns of Matrix 2:                                   
+3 4                                                                 
+Enter values for Matrix 2:                                          
+1 2 3 4                                                             
+5 6 7 8                                                             
+10 1 2 3                                                            
+Computing Multiplication of Matrix 1 X Matrix 2 ...                 
+Exception in thread "main" java.lang.RuntimeException: The Matrices 
+cannot be multiplied! Column Number of First Matrix should be equal 
+to Row Number of Second Matrix.
